@@ -2,8 +2,16 @@ package com.pluralsight;
 
 public class Professor extends MagicalBeing{
     public Professor(String name, String house, int powerLevel, String subject) {
-        super(name, house, powerLevel);
         this.subject = subject;
+    }
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     private String subject;
@@ -16,12 +24,12 @@ public class Professor extends MagicalBeing{
         this.subject = subject;
     }
 
-    @Override
+   // @Override
     public String castSpell(String spell) {
         return getName() + " teaches you the educational spell: " + spell;
     }
 
     public void useMagic(){
-
+        System.out.println("I use magic for teaching");
     }
 }

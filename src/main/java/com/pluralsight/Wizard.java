@@ -64,7 +64,7 @@ public class Wizard extends MagicalBeing{
     }
 
     public void useMagic(){
-
+        System.out.println("I use magic for learning");
     }
 
     //The total number of students currently enrolled at Hogwarts - static

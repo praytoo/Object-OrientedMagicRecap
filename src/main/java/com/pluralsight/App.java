@@ -59,30 +59,37 @@ public class App {
 
         ArrayList<Wizard> wizards2 = new ArrayList<>();
         wizards2.add(new Wizard("Harry", "Gryffindor", 1500));
-        wizards2.add(new DarkWizard("Voldemort", "Slytherin", 5000));
-        wizards2.add(new Professor("McGonagall", "Gryffindor", 800, "Potions"));
+        wizards2.add(new Wizard("Voldemort", "Slytherin", 5000));
+        wizards2.add(new Wizard("McGonagall", "Gryffindor", 800));
         wizards2.add(new Wizard("Prince", "Slytherin", 1200));
-        wizards2.add(new Professor("Snape", "Slytherin", 1500, "Defense"));
+        wizards2.add(new Wizard("Snape", "Slytherin", 1500));
 
         for (Wizard w : wizards2) {
             System.out.println(w.castSpell("Avadacadabra"));
 
-            if (w instanceof Professor) {
-                Professor p = (Professor) w;
-                System.out.println(p.getSubject());
-            }
+            // if (w instanceof Professor) {
+            //  Professor p = (Professor) w;
+            // System.out.println(p.getSubject());
+            // }
 
-            if (w instanceof DarkWizard) {
-                DarkWizard dw = (DarkWizard) w;
-                System.out.println("⚠️ Use caution! Dark wizard detected!");
-            }
+            //if (w instanceof DarkWizard) {
+            //   DarkWizard dw = (DarkWizard) w;
+            //  System.out.println("⚠️ Use caution! Dark wizard detected!");
+            //}
 
-            if (w instanceof Wizard) {
-                Wizard dw = (Wizard) w;
-                System.out.println("Regular wizard encountered");
-            }
+            // if (w instanceof Wizard) {
+            // Wizard dw = (Wizard) w;
+            // System.out.println("Regular wizard encountered");
+            //     }
+            ArrayList<MagicalBeing> creatures = new ArrayList<>();
+            creatures.add(new Professor("Snape", "Slytherin", 1500, "Defense"));
+            creatures.add(new Wizard("Harry", "Gryffindor", 1200));
+            creatures.add(new DarkWizard("Voldemort", "Slytherin", 5000));
 
-                }
-            }}
-            //Create an ArrayList of Wizard type that contains different wizard types (Wizard, Professor, DarkWizard). Add at least 5-6 different wizards to the list. Loop through them and call their overridden methods. Notice how each behaves differently — that's polymorphism in action!
+            for (MagicalBeing m : creatures){
+                m.useMagic();
+            }
+        }
+    }}
+//Create a list of MagicalBeing objects, add various types, and call useMagic() for each.
 
