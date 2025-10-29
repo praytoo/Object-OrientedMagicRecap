@@ -66,6 +66,7 @@ public class App {
 
         for (Wizard w : wizards2) {
             System.out.println(w.castSpell("Avadacadabra"));
+        }
 
             // if (w instanceof Professor) {
             //  Professor p = (Professor) w;
@@ -90,6 +91,5 @@ public class App {
                 m.useMagic();
             }
         }
-    }}
-//Create a list of MagicalBeing objects, add various types, and call useMagic() for each.
+    }
 
