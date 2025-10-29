@@ -68,28 +68,28 @@ public class App {
             System.out.println(w.castSpell("Avadacadabra"));
         }
 
-            // if (w instanceof Professor) {
-            //  Professor p = (Professor) w;
-            // System.out.println(p.getSubject());
-            // }
+        // if (w instanceof Professor) {
+        //  Professor p = (Professor) w;
+        // System.out.println(p.getSubject());
+        // }
 
-            //if (w instanceof DarkWizard) {
-            //   DarkWizard dw = (DarkWizard) w;
-            //  System.out.println("⚠️ Use caution! Dark wizard detected!");
-            //}
+        //if (w instanceof DarkWizard) {
+        //   DarkWizard dw = (DarkWizard) w;
+        //  System.out.println("⚠️ Use caution! Dark wizard detected!");
+        //}
 
-            // if (w instanceof Wizard) {
-            // Wizard dw = (Wizard) w;
-            // System.out.println("Regular wizard encountered");
-            //     }
-            ArrayList<MagicalBeing> creatures = new ArrayList<>();
-            creatures.add(new Professor("Snape", "Slytherin", 1500, "Defense"));
-            creatures.add(new Wizard("Harry", "Gryffindor", 1200));
-            creatures.add(new DarkWizard("Voldemort", "Slytherin", 5000));
+        // if (w instanceof Wizard) {
+        // Wizard dw = (Wizard) w;
+        // System.out.println("Regular wizard encountered");
+        //     }
+        ArrayList<MagicalBeing> creatures = new ArrayList<>();
+        creatures.add(new Professor("Snape", "Slytherin", 1500, "Defense"));
+        creatures.add(new Wizard("Harry", "Gryffindor", 1200));
+        creatures.add(new DarkWizard("Voldemort", "Slytherin", 5000));
 
-            for (MagicalBeing m : creatures){
-                m.useMagic();
-            }
+        for (MagicalBeing m : creatures) {
+            m.useMagic();
         }
-    }
 
+    }
+}
