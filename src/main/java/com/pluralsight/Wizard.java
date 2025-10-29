@@ -1,6 +1,7 @@
 package com.pluralsight;
 
-public class Wizard {
+public class Wizard extends MagicalBeing{
+
     private String name;
     private String house;
     private int powerLevel;
@@ -60,6 +61,10 @@ public class Wizard {
 
     static void welcomeMessage(){
         System.out.println("Welcome to " + school + "School of Witchcraft and Wizardry!");
+    }
+
+    public void useMagic(){
+
     }
 
     //The total number of students currently enrolled at Hogwarts - static
